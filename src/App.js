@@ -5,21 +5,22 @@ import Homepage from "pages/homepages";
 import Notfound from "pages/notfound";
 import Success from "pages/success";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Provider from "helpers/hooks/useGlobalContext";
 
 function App() {
   return (
-    <div className="App">
+    <Provider>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Homepage/>} />
+          <Route exact path="/" element={<Homepage />} />
           {/* :idc for make query params */}
-          <Route path="/categories/:idc" element={<Details/>} />
-          <Route path="/cart" element={<Cart/>}/>
-          <Route path="/success" element={<Success/>}/>
-          <Route path="*" element={<Notfound/>}/>
+          <Route exact path="/categories/:idc" element={<Details />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>
-    </div>
+    </Provider>
   );
 }
 
