@@ -9,18 +9,18 @@ import Footer from "parts/footer";
 import useScrollAnchor from "helpers/hooks/useScrollAnchor";
 import useModalDOM from "helpers/hooks/useModalDOM";
 
-export default function Homepage(){
+export default function Homepage() {
   useScrollAnchor();
-  useModalDOM()
-  return(
+  useModalDOM();
+  return (
     <>
-      <Header theme="white" position="absolute"/>
-      <Hero/>
-      <Browserroom/>
-      <Justarrived/>
-      <Clients/>
-      <Sitemaps/>
-      <Footer/>
+      <Header theme="white" position="absolute" />
+      <Hero />
+      <Browserroom />
+      <Justarrived />
+      <Clients />
+      <Sitemaps />
+      <Footer />
     </>
-  )
+  );
 }

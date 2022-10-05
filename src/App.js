@@ -15,6 +15,7 @@ function App() {
           <Route exact path="/" element={<Homepage />} />
           {/* :idc for make query params */}
           <Route exact path="/categories/:idc" element={<Details />} />
+          <Route path="/categories/:idc/products/:idp" element={<Details />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/success" element={<Success />} />
           <Route path="*" element={<Notfound />} />

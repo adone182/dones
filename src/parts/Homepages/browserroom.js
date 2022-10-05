@@ -85,7 +85,7 @@ export default function Browserroom() {
   };
 
   return (
-    <section className="flex bg-gray-100 py-16 px-4" id="browse-the-room">
+    <section className="flex bg-gray-100 py-16 px-8" id="browse-the-room">
       <div className="container mx-auto">
         <div className="flex flex-start mb-4">
           <h3 className="text-2xl capitalize font-semibold">

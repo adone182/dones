@@ -1,8 +1,7 @@
 import Carousel from "components/Carousel";
 import fetchData from "helpers/fetch";
 import useAsync from "helpers/hooks/useAsync";
-import React, { useEffect } from "react";
-import { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "helpers/format/currency";
 
@@ -33,7 +32,7 @@ export default function Justarrived() {
   }, [run]);
 
   return (
-    <section className="flex flex-col py-16">
+    <section className="flex flex-col py-16 px-2">
       <div className="container mx-auto mb-4">
         <div className="flex justify-center text-center mb-4">
           <h3 className="text-2xl capitalize font-semibold">
@@ -93,7 +92,7 @@ export default function Justarrived() {
                   <h5 className="text-lg font-semibold mt-4">{item.title}</h5>
                   <span className="">{item.price.currency()}</span>
                   <Link
-                    to={`/categories/${item.id}`}
+                    to={`/categories/${item.idc}/products/${item.id}`}
                     className="stretched-link"
                   ></Link>
                 </div>
