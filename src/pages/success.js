@@ -4,10 +4,11 @@ import Footer from "parts/footer";
 import Header from "parts/header";
 import Sitemaps from "parts/sitemaps";
 import React from "react";
+import Document from "parts/document";
 
 export default function Success() {
   return (
-    <>
+    <Document>
       <Header />
       <Breadcrumb
         list={[
@@ -18,6 +19,6 @@ export default function Success() {
       <Congratulation />
       <Sitemaps />
       <Footer />
-    </>
+    </Document>
   );
 }

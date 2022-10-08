@@ -6,14 +6,11 @@ import Browserroom from "parts/Homepages/browserroom";
 import Justarrived from "parts/Homepages/justarrived";
 import Sitemaps from "parts/sitemaps";
 import Footer from "parts/footer";
-import useScrollAnchor from "helpers/hooks/useScrollAnchor";
-import useModalDOM from "helpers/hooks/useModalDOM";
+import Document from "parts/document";
 
 export default function Homepage() {
-  useScrollAnchor();
-  useModalDOM();
   return (
-    <>
+    <Document>
       <Header theme="white" position="absolute" />
       <Hero />
       <Browserroom />
@@ -21,6 +18,6 @@ export default function Homepage() {
       <Clients />
       <Sitemaps />
       <Footer />
-    </>
+    </Document>
   );
 }

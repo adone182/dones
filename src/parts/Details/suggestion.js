@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "helpers/format/currency";
 
 export default function Suggestion({ data }) {
-  console.log(data);
   return (
     <section className="bg-gray-100 px-8 py-16">
       <div className="container mx-auto">

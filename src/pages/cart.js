@@ -5,10 +5,11 @@ import Sitemaps from "parts/sitemaps";
 import Breadcrumb from "components/Breadcrumb";
 import Shoppingcart from "parts/Cart/shoppingcart";
 import Shippingdetail from "parts/Cart/shippingdetail";
+import Document from "parts/document";
 
 export default function Cart() {
   return (
-    <>
+    <Document>
       <Header theme="black" />
       {/* list merupakan props */}
       <Breadcrumb
@@ -32,6 +33,6 @@ export default function Cart() {
       {/* end wrapper cart */}
       <Sitemaps />
       <Footer />
-    </>
+    </Document>
   );
 }

@@ -19,7 +19,6 @@ export function useGlobalContext() {
 function Reducer(state, action) {
   switch (action.type) {
     case "ADD_TO_CART":
-      console.log(action);
       return {
         ...state,
         cart: state.cart
@@ -56,6 +55,5 @@ function Reducer(state, action) {
 
 export default function Provider(props) {
   const [state, dispatch] = useReducer(Reducer, initialState);
-  // console.log(state);
   return <Context.Provider value={[state, dispatch]} {...props} />;
 }

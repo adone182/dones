@@ -1,9 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import useScrollToTop from "helpers/hooks/useScrollToTop";
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Congratulation() {
+  useScrollToTop();
   return (
-   <section className="">
+    <section className="">
       <div className="container mx-auto min-h-screen">
         <div className="flex flex-col items-center justify-center">
           <div className="w-full md:w-4/12 text-center">
@@ -11,7 +13,9 @@ export default function Congratulation() {
               src="/images/content/illustration-success.png"
               alt="congrats illustration"
             />
-            <h2 className="text-3xl font-semibold mb-6">Ah yes it’s success!</h2>
+            <h2 className="text-3xl font-semibold mb-6">
+              Ah yes it’s success!
+            </h2>
             <p className="text-lg mb-12">
               Furniture yang anda beli akan kami kirimkan saat ini juga so now
               please sit tight and be ready for it
@@ -26,5 +30,5 @@ export default function Congratulation() {
         </div>
       </div>
     </section>
-  )
+  );
 }
